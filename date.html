@@ -44,13 +44,13 @@ body{
     var greet;
 
     if (hrs < 12)
-        greet = '🔆 M O R N I N G';
-    else if (hrs >= 12 && hrs <= 17)
-        greet = '🔆 A F T E R N O O N';
-    else if (hrs >= 17 && hrs <= 20)
-        greet = '🌙 E V E N I N G';
+        greet = '🔆 MORNING';
+    else if (hrs >= 12 && hrs <= 16)
+        greet = '🔆 AFTERNOON';
+    else if (hrs >= 16 && hrs <= 20)
+        greet = '🌙 EVENING';
     else if (hrs >= 20 && hrs <= 24)
-        greet = '🌙 N I G H T';
+        greet = '🌙 NIGHT';
 
     document.getElementById('lbl').innerHTML =
         greet+=`<div id="date">${date}</div>`;
